@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+</head>
+<body>
+
+<div class="contenedor">
+
+
+
+
+
+
+<div class="container" onclick="playAudio()">
+
+<div id="player">
+	<img class="noSelect" src="img2/1 el gallo-min.jpg" />
+	<img class="noSelect" src="img2/2 el diablito-min.jpg" />
+	<img class="noSelect" src="img2/3 la dama-min.jpg" />
+	<img class="noSelect" src="img2/4 el catrin-min.jpg" />
+	<img class="noSelect" src="img2/5 el paraguas-min.jpg" />
+	<img class="noSelect" src="img2/6 la-sirena-min.jpg" />
+	<img class="noSelect" src="img2/7 la escalera-min.jpg" />
+	<img class="noSelect" src="img2/8 la botella-min.jpg" />
+	<img class="noSelect" src="img2/9 barril-min.jpg" />
+</div>
+
+
+
+<div id="player">
+	<img class="noSelect" src="img2/10 arbol-min.jpg" />
+	<img class="noSelect" src="img2/11 melon-min.jpg" />
+	<img class="noSelect" src="img2/12 el valiente-min.jpg" />
+	<img class="noSelect" src="img2/13 el gorrito-min.jpg" />
+	<img class="noSelect" src="img2/14 la muerte-min.jpg" />
+	<img class="noSelect" src="img2/15 la pera-min.jpg" />
+	<img class="noSelect" src="img2/16 la bandera-min.jpg" />
+	<img class="noSelect" src="img2/17 el bandolon-min.jpg" />
+	<img class="noSelect" src="img2/18 el violoncello-min.jpg" />
+</div>
+
+<div id="player">
+	<img class="noSelect" src="img2/19 la garza-min.jpg" />
+	<img class="noSelect" src="img2/20 el pajaro-min.jpg" />
+	<img class="noSelect" src="img2/21 la mano-min.jpg" />
+	<img class="noSelect" src="img2/22 la bota-min.jpg" />
+	<img class="noSelect" src="img2/23 la luna-min.jpg" />
+	<img class="noSelect" src="img2/24 el cotorro-min.jpg" />
+	<img class="noSelect" src="img2/25 el borracho-min.jpg" />
+	<img class="noSelect" src="img2/26 el negrito-min.jpg" />
+	<img class="noSelect" src="img2/27 el corazon-min.jpg" />
+</div>
+
+
+
+<div id="player">
+	<img class="noSelect" src="img2/28 la sandia-min.jpg" />
+	<img class="noSelect" src="img2/29 el tambor-min.jpg" />
+	<img class="noSelect" src="img2/30 el camaron-min.jpg" />
+	<img class="noSelect" src="img2/31 las jaras-min.jpg" />
+	<img class="noSelect" src="img2/32 el musico-min.jpg" />
+	<img class="noSelect" src="img2/33 la araña-min.jpg" />
+	<img class="noSelect" src="img2/34 el soldado-min.jpg" />
+	<img class="noSelect" src="img2/35 la estrella-min.jpg" />
+	<img class="noSelect" src="img2/36 el cazo-min.jpg" />
+</div>
+
+<div id="player">
+	
+	<img class="noSelect" src="img2/37 el mundo-min.jpg" />
+	<img class="noSelect" src="img2/38 el apache-min.jpg" />
+	<img class="noSelect" src="img2/39 el nopal-min.jpg" />
+	<img class="noSelect" src="img2/40 el alacran-min.jpg" />
+	<img class="noSelect" src="img2/41 la rosa-min.jpg" />
+	<img class="noSelect" src="img2/42 la calavera-min.jpg" />
+	<img class="noSelect" src="img2/43 la campana-min.jpg" />
+	<img class="noSelect" src="img2/44 el cantarito-min.jpg" />
+	<img class="noSelect" src="img2/45 el venado-min.jpg" />
+</div>
+
+<div id="player">
+	
+	<img class="noSelect" src="img2/46 el sol-min.jpg" />
+	<img class="noSelect" src="img2/47 la corona-min.jpg" />
+	<img class="noSelect" src="img2/48 la chalupa-min.jpg" />
+	<img class="noSelect" src="img2/49 el pino-min.jpg" />
+	<img class="noSelect" src="img2/50 el pescado-min.jpg" />
+	<img class="noSelect" src="img2/51 la palma-min.jpg" />
+	<img class="noSelect" src="img2/52 la maceta-min.jpg" />
+	<img class="noSelect" src="img2/53 el arpa-min.jpg" />
+	<img class="noSelect" src="img2/54 la rana-min.jpg" />
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script>
+	for(imagen of document.querySelectorAll('#player>img')){
+		imagen.addEventListener('click', clickImagen);
+	}
+ 
+	function clickImagen(){
+		for(imagen of document.querySelectorAll('img.select')){
+			imagen.classList.remove('noSelect');
+			this.classList.add('noSelect');
+
+		}
+
+		this.classList.remove('noSelect');
+		this.classList.add('select');
+
+	}
+</script>
+
+<!--
+<script type="text/javascript">
+	var sonido = new audio();
+	sonido.src = sonido.mp3;
+</script>
+-->
+
+
+
+<audio id="myAudio" >
+  <source src="sonido.ogg" type="audio/ogg">
+  <source src="audio/sonido.mp3" type="audio/mpeg" >
+  Your browser does not support the audio element.
+</audio>
+
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+
+</body>
+</html>
