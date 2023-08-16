@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: #000001;
+    
+
+
+
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    /*
+    background: linear-gradient(#1f1726, #0d0514);
+    */
+
+    background: url("../img/fondo-lot.png") no-repeat center fixed ;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+img {
+	
+	/*cursor: pointer;*/
+	width: 60px;
+	height: 90px;
+	border: 3px solid white;
+
+}
+
+
+
+img .fondo {
+	width: 200px;
+}
+
+
+
+
+
+
+img:hover{
+transform: scale(1.5) ;
+	transition: .2s;
+
+}
+
+
+
+/*Switch*/
+.switch > input {
+	display:none;
+
+
+
+}
+.switch > label {
+	cursor: url("../img/mira30x30v.png"), auto;
+	z-index: 100;
+}
+
+
+.switch > input:checked + label {
+	opacity: 0.2;
+	cursor: url("../img/mira30x30r.png"), auto;
+
+}
+
+.switch > input:checked + label :hover{
+	cursor: url("../img/mira30x30r.png"), auto;
+	transform: scale(1) ;
+	transition: .0s;
+}
+
