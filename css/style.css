@@ -22,7 +22,7 @@ body {
     background: linear-gradient(#1f1726, #0d0514);
     */
 
-    background: url("../img1/fondo-lot.png") no-repeat center fixed ;
+    background: url("../img/fondo-lot.png") no-repeat center fixed ;
     background-size: cover;
     background-position: center;
     
@@ -30,52 +30,56 @@ body {
 
 
 
-
-
-
-
-
- 
-
-
-.noSelect:hover {
-	
-	cursor: url("../img1/mira30x30v.png"), auto;
-	transform: scale(1.5) ;
-	transition: .2s;
-	border: 4px solid white;
-	position: relative;
-	z-index: 100;
-}
-
-.select{
-	    cursor: url("../img1/mira30x30r.png"), auto;
-
-
-		background: #000001;
-		
-		border: 0px solid red;
-		opacity: 0.2;
-		
-	}
-
 img {
 	
 	/*cursor: pointer;*/
 	width: 60px;
 	height: 90px;
 	border: 3px solid white;
-	
-	
-
-	
 
 }
-
-
 
 
 
 img .fondo {
 	width: 200px;
 }
+
+
+
+
+
+
+img:hover{
+transform: scale(1.5) ;
+	transition: .2s;
+
+}
+
+
+
+/*Switch*/
+.switch > input {
+	display:none;
+
+
+
+}
+.switch > label {
+	cursor: url("../img/mira30x30v.png"), auto;
+	z-index: 100;
+}
+
+
+.switch > input:checked + label {
+	opacity: 0.2;
+	cursor: url("../img/mira30x30r.png"), auto;
+
+}
+
+.switch > input:checked + label :hover{
+	cursor: url("../img/mira30x30r.png"), auto;
+	transform: scale(1) ;
+	transition: .0s;
+}
+
